@@ -1,0 +1,115 @@
+body{
+    background-color: beige;
+    color:#FFD700;
+    width: 100%;
+    height: 100%;
+}
+
+.SMCG{
+    background: linear-gradient(135deg, #6C63FF, #00D4FF);
+    /* height: 40vh; */
+    width: 70vh;
+    margin: auto;
+    border-radius: 50px;
+    padding: 1px 1px 10px 1px
+}
+.formsection{
+    width: 100%;
+    height: 100%;
+   
+}
+
+.heading1{
+    text-align: center;
+    padding: 5px;
+    color: #FFD700;
+}
+
+.heading2{
+    padding: 0vw 0vw ;
+    font-size: 1.5vw;
+    margin: 1vw 5vw;
+}
+
+.inputsection{
+    display: block;
+    padding: 10px;
+    margin: 5px auto;
+    height:10vh;
+    width: 90%;
+    border: 2px double #FFD700;
+    border-radius: 0px 30px;
+    background-color: #d4d2fc;
+
+    max-width: 80%;
+    min-height: 10vh;
+    min-width: 40%;
+    max-height: 50vh;
+}
+
+.platformselections{
+    display:flex;
+    margin: 1px auto;
+    width: 70%;
+    justify-content: space-between;
+}
+
+.platformselection{
+    /* background-color: #34ff96; */
+    width: 30%;
+    border-radius: 10px;
+    
+    
+}
+
+.platformselection input[type="checkbox"] {
+    transform: scale(2); /* 1.5x bigger */
+    margin-right: 10px;     /* spacing between checkbox and text */
+    vertical-align: middle; /* aligns checkbox with text */
+    cursor: pointer;        /* makes pointer on hover */
+    
+}
+
+
+.platformselection:checked{
+    background-color: green;
+}
+
+.contactButton{
+    display: block;
+    background-color: blue;
+    border: 1px solid white;
+    border-radius: 7px;
+    height: 30px;
+    margin:25px auto;
+    width: 20%;
+    padding: 5px;
+    color: #FFD700;
+}
+
+.contactButton:hover{
+    background-color: #00D4FF;
+    border: 1px solid #FFD700;
+    color: red;
+}
+
+
+.posted_data{
+    font-size: 20px;
+    margin: 5vw;
+}
+
+.post-block{
+    background-color: #6C63FF;
+    border: 3px solid white;
+    border-radius: 35px;
+    padding: 5px;
+    margin: 20px 0px;
+    text-align: center;
+}
+
+.post-platform{
+    font-weight: 800;
+    font-size: 25px;
+    text-transform: capitalize;
+}
