@@ -209,7 +209,7 @@ const HomePage = () => {
                 </div>
 
 
-                <button className='contactButton' type='button' onClick={() => { contactGemini() }}>contact gemini</button>
+                <button className='contactButton' type='button' onClick={() => { contactGemini() }}>Create Content</button>
 
                 <div className='posted_data'>
                     {Array.isArray(formattedPosts) && formattedPosts.length > 0 ? (
