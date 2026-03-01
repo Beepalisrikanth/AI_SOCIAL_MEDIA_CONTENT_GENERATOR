@@ -21,14 +21,16 @@ body{
 
 .heading1{
     text-align: center;
-    padding: 5px;
+    padding: 1rem;
     color: #FFD700;
 }
 
 .heading2{
     padding: 0vw 0vw ;
-    font-size: 1.5vw;
+    font-size: 1.5em;
     margin: 1vw 5vw;
+    text-align: center;
+    padding: 0px 0px 1px 1px;
 }
 
 .inputsection{
@@ -52,12 +54,19 @@ body{
     margin: 1px auto;
     width: 70%;
     justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .platformselection{
     /* background-color: #34ff96; */
-    width: 30%;
+    width: 20%;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+
+    flex-wrap: wrap;
+    
     
     
 }
@@ -70,20 +79,29 @@ body{
     
 }
 
+.platformBlock{
+    border: 2px solid white;
+    margin: 1rem 3rem;
+    padding: 0.5rem;
+    border-radius: 0rem 0rem 1rem 1rem;
+}
+
 
 .platformselection:checked{
     background-color: green;
 }
 
 .contactButton{
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: blue;
-    border: 1px solid white;
+    border: 2px solid white;
     border-radius: 7px;
-    height: 30px;
+    /* height: 30px; */
     margin:25px auto;
-    width: 20%;
-    padding: 5px;
+    width: 30%;
+    padding: 1em;
     color: #FFD700;
 }
 

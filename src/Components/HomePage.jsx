@@ -4,7 +4,7 @@ import "./HomePage.css"
 const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
 const apiUrl = import.meta.env.VITE_API_URL;
 
-console.log(apiKey,apiUrl)
+console.log(apiKey, apiUrl)
 
 
 const HomePage = () => {
@@ -145,65 +145,66 @@ const HomePage = () => {
                     value={formData.rawText}>
                 </textarea>
 
+                <div className='platformBlock'>
+                    <h6 className='heading2'>Platform</h6>
+                    <div className='platformselections'>
+                        <div className='platformselection'>
+                            <input type="checkbox" name="platform" id="Linkedin" value={"linkedin"}
+                                onChange={(e) => {
+                                    if (e.target.checked) {
+                                        setFormData({
+                                            ...formData,
+                                            platforms: [...formData.platforms, e.target.value]
+                                        })
+                                    }
+                                    else {
+                                        setFormData({
+                                            ...formData,
+                                            platforms: formData.platforms.filter((platform) => platform !== e.target.value)
+                                        })
+                                    }
+                                }}></input>
+                            <span className='inputBtnPlatfrom'>Linkedin</span>
+                        </div>
 
-                <h6 className='heading2'>Platform</h6>
-                <div className='platformselections'>
-                    <div className='platformselection'>
-                        <input type="checkbox" name="platform" id="Linkedin" value={"linkedin"}
-                            onChange={(e) => {
-                                if (e.target.checked) {
-                                    setFormData({
-                                        ...formData,
-                                        platforms: [...formData.platforms, e.target.value]
-                                    })
-                                }
-                                else {
-                                    setFormData({
-                                        ...formData,
-                                        platforms: formData.platforms.filter((platform) => platform !== e.target.value)
-                                    })
-                                }
-                            }}></input>
-                        <span>Linkedin</span>
-                    </div>
+                        <div className='platformselection'>
+                            <input type="checkbox" name="platform" id="Instagram" value={"Instagram"}
+                                onChange={(e) => {
+                                    if (e.target.checked) {
+                                        setFormData({
+                                            ...formData,
+                                            platforms: [...formData.platforms, e.target.value]
+                                        })
+                                    }
+                                    else {
+                                        setFormData({
+                                            ...formData,
+                                            platforms: formData.platforms.filter((platform) => platform !== e.target.value)
+                                        })
+                                    }
+                                }}>
+                            </input>
+                            <span className='inputBtnPlatfrom'>Instagram</span>
+                        </div>
 
-                    <div className='platformselection'>
-                        <input type="checkbox" name="platform" id="Instagram" value={"Instagram"}
-                            onChange={(e) => {
-                                if (e.target.checked) {
-                                    setFormData({
-                                        ...formData,
-                                        platforms: [...formData.platforms, e.target.value]
-                                    })
-                                }
-                                else {
-                                    setFormData({
-                                        ...formData,
-                                        platforms: formData.platforms.filter((platform) => platform !== e.target.value)
-                                    })
-                                }
-                            }}>
-                        </input>
-                        <span>Instagram</span>
-                    </div>
-
-                    <div className='platformselection'>
-                        <input type="checkbox" name="platform" id="Twitter" value={"Twitter"}
-                            onChange={(e) => {
-                                if (e.target.checked) {
-                                    setFormData({
-                                        ...formData,
-                                        platforms: [...formData.platforms, e.target.value]
-                                    })
-                                }
-                                else {
-                                    setFormData({
-                                        ...formData,
-                                        platforms: formData.platforms.filter((platform) => platform !== e.target.value)
-                                    })
-                                }
-                            }}></input>
-                        <span>Twitter</span>
+                        <div className='platformselection'>
+                            <input type="checkbox" name="platform" id="Twitter" value={"Twitter"}
+                                onChange={(e) => {
+                                    if (e.target.checked) {
+                                        setFormData({
+                                            ...formData,
+                                            platforms: [...formData.platforms, e.target.value]
+                                        })
+                                    }
+                                    else {
+                                        setFormData({
+                                            ...formData,
+                                            platforms: formData.platforms.filter((platform) => platform !== e.target.value)
+                                        })
+                                    }
+                                }}></input>
+                            <span className='inputBtnPlatfrom'>Twitter</span>
+                        </div>
                     </div>
                 </div>
 
