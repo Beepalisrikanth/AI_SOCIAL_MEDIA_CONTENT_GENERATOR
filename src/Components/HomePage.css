@@ -22,7 +22,11 @@ body{
 .heading1{
     text-align: center;
     padding: 1rem;
-    color: #FFD700;
+    /* color: red; */
+    background: linear-gradient(180deg, gold, red);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .heading2{
