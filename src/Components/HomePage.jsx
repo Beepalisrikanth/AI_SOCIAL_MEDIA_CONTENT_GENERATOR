@@ -225,7 +225,7 @@ const HomePage = () => {
                 </div>
             </form>
 
-
+                    <div className='footer'>© 2026 Srikanth. All rights reserved.</div>
         </div>
     )
 }

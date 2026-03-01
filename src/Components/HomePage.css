@@ -3,7 +3,6 @@ body{
     color:#FFD700;
     /* width: 100%; */
     /* height: 100%; */
-    
 }
 
 .SMCG{
@@ -11,14 +10,30 @@ body{
     /* height: 40vh; */
     /* width: 30vh; */
     margin: auto;
+    border: 3px double gold;
     border-radius: 50px;
     padding: 1px 1px 10px 1px;
-    box-shadow: 10px 10px 10px 10px red;
+    /* box-shadow: 10px 10px 10px 1px rgb(0, 213, 255); */
 }
 .formsection{
     width: 100%;
     height: 100%;
    
+}
+.footer{
+    /* text-align: center; */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: linear-gradient(12deg, #6C63FF, #00D4FF); */
+    overflow: hidden;
+    padding: 1rem;
+    width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+    border-radius: 50px;
+    /* border: 1px solid white; */
 }
 
 .heading1{
@@ -101,7 +116,7 @@ body{
     border: 2px solid white;
     border-radius: 7px;
     box-shadow: 1px 1px 1px 1px  #00D4FF;
-    margin:25px auto;
+    margin:2em auto 0px auto;
     width: 30%;
     padding: 1em;
     color: #FFD700;
